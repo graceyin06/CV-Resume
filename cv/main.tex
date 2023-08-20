@@ -1,0 +1,232 @@
+%--------------------------
+% Curriculum Vitae in Latex
+% Author : Grace Yin
+% License : MIT
+%--------------------------
+
+\documentclass[margin,line]{res}
+
+\usepackage{pifont}
+\usepackage{hyperref}
+\usepackage[utf8x] {inputenc}
+\usepackage{lmodern,textcomp}
+
+%\topmargin .5in
+%\oddsidemargin -.5in
+%\evensidemargin -.5in
+%\textwidth=6.0in
+ \textheight=9.0in
+%\itemsep=0in
+%\parsep=0in
+\usepackage{fancyhdr}
+%\topmargin=0in
+%\textheight=8.5in
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+%\cfoot{\thepage}
+%\lfoot{\textit{\footnotesize Research Statement}}
+%\rfoot{{\footnotesize Curriculum Vitae, Yuchong Pan, \thepage}}
+
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+
+\begin{document}
+
+\name{Grace (Weijia) Yin \vspace*{.1in}}
+
+\begin{resume}
+
+\section{\sc Contact Information}
+
+\vspace{.05in}
+\begin{tabular}{p{2in}}
++1 (778) 929-0150 \\
+\href{mailto:grace.yin@stat.ubc.ca}{grace.yin@stat.ubc.ca}
+\href{https://github.com/graceyin06}{https://github.com/graceyin06}
+\end{tabular}
+
+
+\section{\sc Research Interests}
+Machine Learning, Markov chain Monte Carlo (MCMC), Causal Inference, Variational Inference,  Measurement Models
+
+\section{\sc Education}
+{\bf University of British Columbia}\\
+\vspace*{-.1in}
+\begin{list1}
+\item[] Master of Science, Statistics \hfill{September 2020 - May 2022 }
+ \begin{list2}
+    \item[$\circ$] Advisor: Benjamin Bloem-Reddy
+  \end{list2}
+\item[] Bachelor of Science, Honours in Statistics \hfill{September 2015 - May 2020}
+ \begin{list2}
+    \item[$\circ$] Advisor: Bruno Zumbo, Nguyen LAM
+  \end{list2}
+
+\end{list1}
+
+\section{\sc Research Experience}
+{\bf Mixing time of High-demensional variable selection } \hfill{February 2023 -  Present }\\{ Supervisor: \bf Zhixin Zhou, Amini, Arash}\begin{itemize}\item[$\circ$] Calculate the mixing time of Markov chain Monte Carlo (MCMC) methods for Bayesian variable selection
+  \end{itemize}
+{\bf Identifying Causal Structure in Equivariant Models } \hfill{June 2021 -  May 2022 }\\{  Supervisor:   \bf  Benjamin Bloem-Reddy}\begin{itemize}\item[$\circ$] Identify structural causal models by applying constant risk theorem on equivariant predictive models and conducting simulation experiments in Python
+  \end{itemize}
+
+{\bf Bayesian Estimation for Cronbach's Alpha} \hfill{May 2019 -May 2020}\\{  Supervisor:   \bf Bruno Zumbo and  Professor Edward Kroc}
+\begin{itemize}\item[$\circ$]
+ Conducted mathematical analysis and simulation studies in R to explore the deep understanding of Bayes estimators and empirical estimators for Cronbach's Alpha\end{itemize}
+
+{\bf  Caffarelli-Kohn-Nirenberg Inequalities }\hfill{July 2018 - December 2018}\\{ Supervisor:   \bf  Nguyen LAM}\begin{itemize}\item[$\circ$]
+ Used suitable quasiconformal mappings to study the sharp versions and the optimizers of Caffarelli-Kohn-Nirenberg Inequalities \end{itemize} 
+ 
+
+{\bf Hardy Inequalities}\hfill{May 2018 - June 2018}\\{ Research Supervisor:  \bf Professor Nguyen LAM}\begin{itemize}\item[$\circ$]
+ Calculated the exact remainder terms of some versions of Hardy-type Inequalities with Bessel Pairs and radial derivatives\end{itemize}
+
+
+
+\section{\sc Publications and Manuscripts}\begin{list2}
+\item[$\circ$]N. T. Duy, P. Le-Long, and \textbf{W. Yin}: \href{http://jmi.ele-math.com/14-32/Hardy-inequalities-and-Caffarelli-Kohn-Nirenberg-inequalities-with-radial-derivative}{\textit{Hardy inequalities and Caffarelli-Kohn-Nirenberg inequalities with radial derivative}}, Journal of Mathematical Inequalities. Mentored by Dr. Nguyen LAM. 
+\item[$\circ$]N. T. Duy, N. Lam-Hoang, N. A. Triet, and \textbf{W. Yin}:
+\href{http://mia.ele-math.com/23-93/Improved-Hardy-inequalities-with-exact-remainder-terms}{\textit{Improved Hardy inequalities with exact remainder terms}}. Journal of Mathematical Inequalities and Applications. 
+\end{list2}
+
+\section{\sc Manuscripts}\begin{list2}
+\item[$\circ$]Equivariant Predictive Models and Structural Causal Model Identification. Master project report, University of British Columbia, 2022.
+\end{list2}
+\section{\sc Talks and Presentations}
+\begin{list2}
+\item[$\circ$]
+{On the relationship between equivariant predictive models and structural causal model identification}, UBC statistics graduate seminar. (April 14th 2022)\href{https://github.com/graceyin06/invariant-model/blob/main/master_slide-18.pdf}{[slides]}
+\item[$\circ$]
+{Improved Hardy Inequalities with Exact Remainder Terms}, 2018 Canadian Mathematical Society (CMS) Winter Meeting in Vancouver. (December 8th 2018)\href{https://graceyin06.github.io/Hardy-Inequalities-Talks/poster_for_CMS.pdf}{[poster]}
+\item[$\circ$]
+{Hardy Inequalities and Bessel Pairs}, BC Undergraduate Mathematics and Statistics Conference (BC UMSC). (April 25th 2019)
+\href{https://graceyin06.github.io/Hardy-Inequalities-Talks/BC_UMSC_Slides.pdf}{[slides]}
+\end{list2}
+
+
+% \emph{The notorious piston problem and some recent results obtained
+% by averaging}, Seminar in Nonlinear Systems, Stevens Institute of
+% Technology. (November 1995)
+
+% \emph{Anosov's averaging theorem and an application}, Young Person's
+% Seminar, Time at work trimester on dynamical systems, Institut Henri
+% Poincar�, Paris, France. (July 1995)
+
+% \emph{Ergodicity and averaging: A discussion of a theorem due to
+% Anosov and a possible application}, Dynamical System Seminar, New
+% York University. (March 1995)
+
+
+
+% \newpage
+
+
+
+
+\section{\sc Selected Projects}
+
+\begin{list2}
+\item[$\circ$] \href{https://github.com/graceyin06/VarGrad}{Gradient Estimator of the Log-Variance Loss
+Divergence}
+\item[$\circ$] \href{https://github.com/graceyin06/STAT538A-Final-Project/blob/master/project.ipynb}{Generalized Linear Models for Predicting Human Suicide Numbers}
+\item[$\circ$] \href{https://github.com/graceyin06/GY-stat547c}{Martingale Convergence Theorem and Stochastic Optimization}
+\end{list2}
+
+
+
+\section{\sc Teaching Experience}
+
+{\bf University of British Columbia}\\
+\vspace*{-.1in}
+\begin{list1}
+\item[]Graduate Teaching Assistant \hfill September 2020 - April 2022
+\begin{itemize}
+\item[$\circ$] STAT 305 Introduction to Statistical Inference, 2020 Winter \& 2021 Spring
+\item[$\circ$] STAT 406 Methods for Statistical Learning, 2020 Winter
+\item[$\circ$] STAT 302 Introduction to Probability, 2022 Spring
+\end{itemize}
+\end{list1}
+
+\section{\sc Employment}
+{\bf B.C. Centre for Excellence in HIV/AIDS , Vancouver, B.C.}\\
+\vspace*{-.1in}
+\begin{list1}
+\item[]Statistician \hfill October 2022 - Present
+\begin{itemize}
+\item[$\circ$] Answer HIV questions in HIV by wrangling longitudinal and censored HIV data for exploratory data analysis
+\item[$\circ$] Fit exploratory models and confounding models including generalized linear mixed effect regression models and regression discontinuity design models; selected and adjusted optimal models
+\item[$\circ$] Contribute to manuscript-writing by translating complex statistical concepts into comprehensible language for epidemiologists and proof reading
+\end{itemize}
+\end{list1}
+{\bf Kwantlen Polytechnic University Office of Researcher Service, Richmond, B.C.}\\
+\vspace*{-.1in}
+\begin{list1}
+\item[]Data Analyst  \hfill September 2022 - October 2022
+\begin{itemize}
+\item[$\circ$] Fitted generalized linear mixed effect regression models on health science data; presented results to researchers
+\end{itemize}
+\end{list1}
+{\bf Look4Tutor Institute, Vancouver, B.C.}\\
+\vspace*{-.1in}
+\begin{list1}
+\item[]University-Level MATH Tutor \hfill September 2018 - September 2019
+\begin{itemize}
+\item[$\circ$] Teach calculus, linear algebra and mathematical proof courses
+\item[$\circ$] Support students with exam preparation to help them improve their grades
+\end{itemize}
+\end{list1}
+\section{\sc Professional Service}
+{Journal Review}
+\begin{itemize}
+\item[$\circ$] Journal of IEEE Transaction on Cybernetics
+\end{itemize}
+
+\section{\sc Honors and Awards}
+
+\begin{list2}
+
+\item[$\circ$] {International Tuition Award (CAD\$3,200), University of British Columbia, 2021}
+\item[$\circ$] {International Tuition Award (CAD\$2,100), University of British Columbia, 2022}
+\end{list2}
+
+\section{\sc Volunteering Experience}
+{UBC-SFU Statistics Joint Seminar, Co-organizer }
+\begin{itemize}
+\item[$\circ$] \href{https://ubc-sfu-joint-stat-seminar-spring-2022.github.io}{UBC-SFU Statistics Joint Seminar Spring 2022}
+\item[$\circ$]\href{https://www.stat.ubc.ca/~kenny.chiu/jointseminar/spring2021/}{UBC-SFU Statistics Joint Seminar Spring 2021}
+
+\end{itemize}
+\section{\sc Academic  Training}
+\begin{list2}
+\item[$\circ$]{14th Women in Machine Learning Workshop (WiML 2019) with  NeurIPS} \hfill{,  Vancouver, December 9th, 2019.}
+\end{list2}
+\section{\sc Relevant Skills}
+
+\vspace{.05in}
+\begin{tabular}{@{}p{0.8in}p{4.25in}}
+
+Languages:& English, Mandarin \\
+Programming:& \LaTeX, Python, R, Julia, SAS, MATLAB, MySQL\\
+%Software:&  Photoshop, Premiere Pro, After Effects, Adobe Audition
+
+\end{tabular}
+\section{\sc Last Updated}
+\today
+
+
+\end{resume}
+
+\end{document}
